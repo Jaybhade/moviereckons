@@ -1,11 +1,7 @@
 import Carousel from "../components/carousel";
 
 const AllBlogs = () => {
-  return (
-    <div>
-      <Carousel />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default AllBlogs;
