@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import LeftPanel from "../components/leftpanel";
+import { Tablet, Mobile } from "../lib/responsive";
+import Nav from "../components/nav";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
