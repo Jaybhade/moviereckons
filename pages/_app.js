@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import LeftPanel from "../components/leftpanel";
-import { Tablet, Mobile } from "../lib/responsive";
+import { Tablet, Mobile, Desktop } from "../lib/responsive";
 import Nav from "../components/nav";
 
 function MyApp({ Component, pageProps }) {
@@ -24,8 +24,16 @@ function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
-      {router.pathname == "/allblogs" ? null : <LeftPanel />}
-      <Component {...pageProps} />
+      <Desktop>
+        {router.pathname == "/allblogs" ? null : <LeftPanel />}
+        <Component {...pageProps} />
+      </Desktop>
+      <Tablet>
+        <Component {...pageProps} />
+      </Tablet>
+      <Mobile>
+        <Component {...pageProps} />
+      </Mobile>
     </div>
   );
 }

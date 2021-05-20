@@ -25,6 +25,8 @@
   width: 77%;
   margin-top: 25px;
   margin-bottom: 55px;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .index_tablet {
