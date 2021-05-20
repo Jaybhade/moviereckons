@@ -14,7 +14,7 @@ const Carousel = () => {
   };
 
   return (
-    <div>
+    <div style={{ padding: "10px", marginBottom: "10px" }}>
       <Slider {...settings}>
         <div>
           <CarouselCard image="moviereckons-20210429-0001.jpg">
