@@ -5,7 +5,13 @@ const CarouselCard = (props) => {
   const image = "/carousel/" + props.image;
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Desktop>
         <div
           style={{
