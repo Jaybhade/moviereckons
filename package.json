@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "build:css": "postcss styles/tailwind.css -o styles/main.css"
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.1.3",

@@ -8,30 +8,21 @@ const CollapseMenu = (props) => {
 
   if (props.navbarState === true) {
     return (
-      <CollapseWrapper
-        style={{
-          transform: open
-            .interpolate({
-              range: [0, 0.2, 0.3, 1],
-              output: [0, -20, 0, -200],
-            })
-            .interpolate((openValue) => `translate3d(0, ${openValue}px, 0`),
-        }}
-      >
+      <CollapseWrapper>
         <NavLinks>
           <li>
             <a href="/" onClick={props.handleNavbar}>
-              link n1
+              Home
             </a>
           </li>
           <li>
             <a href="/" onClick={props.handleNavbar}>
-              link n2
+              About us
             </a>
           </li>
           <li>
             <a href="/" onClick={props.handleNavbar}>
-              link n3
+              Contact us
             </a>
           </li>
           <li>

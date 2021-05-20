@@ -23,7 +23,20 @@ export default function Home() {
         <Desktop>
           <div className={styles.index}>
             <Carousel />
-            <div style={{ marginTop: "40px" }}>{/* <Card /> */}</div>
+          </div>
+          <div
+            style={{
+              marginLeft: "18%",
+              display: "flex",
+              flexDirection: "row",
+              paddingLeft: "35px",
+              paddingRight: "30px",
+              justifyContent: "space-between",
+            }}
+          >
+            <Card />
+            <Card />
+            <Card />
           </div>
         </Desktop>
         <Tablet>
